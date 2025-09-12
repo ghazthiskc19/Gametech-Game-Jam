@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1760458453344091038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 257599355217759746, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cfabad5ffe068ac4683f6f7055551749, type: 3}
+    - target: {fileID: 257599355217759746, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 257599355217759746, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 257599355217759746, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 826284781294935845, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Name
+      value: Sampah 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342894299800664988, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264493072608384225, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: amountScore
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082611920452491551, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082611920452491551, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082611920452491551, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27597c67cbe45184abfa1b3b6993b8ce, type: 3}

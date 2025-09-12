@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     public int damage;
-    private bool collisionOccurred = false;
+    [SerializeField] private bool collisionOccurred = false;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
