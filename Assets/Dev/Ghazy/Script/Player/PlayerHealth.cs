@@ -1,51 +1,80 @@
 using UnityEngine;
 using System.Collections;
 using DG.Tweening;
+using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 90;
     public int currentHealth;
     public int minusHealth;
     public float invisibleDuration;
+    public int plusHealth;
+    public float intervalHealth;
+    public Image healthbarImage;
     public bool isInvisible;
+    public bool isHitByEnemy;
+    public bool effectsPaused = false;
+    private PlayerMovement playerMovement;
     [SerializeField] private bool _isInWater = false;
+    [SerializeField] private bool _isInSave = false;
     private Coroutine damageCoroutine;
+    private Coroutine healCoroutine;
     void Start()
     {
         currentHealth = maxHealth;
         EventManager.instance.OnPlayerHit += OnPlayerHit;
+        playerMovement = GetComponent<PlayerMovement>();
     }
     private void OnDisable()
     {
         EventManager.instance.OnPlayerHit -= OnPlayerHit;
+    }
 
+    void Update()
+    {
+        if (healthbarImage != null)
+        {
+            healthbarImage.fillAmount = (float) currentHealth / maxHealth;
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("water"))
         {
-            _isInWater = true;
-            damageCoroutine = StartCoroutine(StartDamage());
-        }
-    }
-    private IEnumerator StartDamage()
-    {
-        while (true)
-        {
-            if (_isInWater && currentHealth > 0)
+            if (_isInSave)
             {
-                int targetHealth = Mathf.Max(currentHealth - minusHealth);
-                DOTween.To(() => currentHealth, x => currentHealth = x, targetHealth, 0.5f)
-                // .OnUpdate(() => ))
-                .OnComplete(() =>
+                _isInSave = false;
+                if (healCoroutine != null)
                 {
-                    if (currentHealth <= 0)
-                    {
-                        EventManager.instance.WhenPlayerDied();
-                    }
-                });
+                    StopCoroutine(healCoroutine);
+                    healCoroutine = null;
+                }
             }
-            yield return new WaitForSeconds(1f);
+
+            _isInWater = true;
+            if (damageCoroutine == null)
+            {
+                damageCoroutine = StartCoroutine(StartDamage());
+            }
+        }
+
+        if (other.gameObject.CompareTag("save"))
+        {
+            if (_isInWater)
+            {
+                _isInWater = false;
+                if (damageCoroutine != null)
+                {
+                    StopCoroutine(damageCoroutine);
+                    damageCoroutine = null;
+                }
+            }
+
+            _isInSave = true;
+            if (healCoroutine == null)
+            {
+                healCoroutine = StartCoroutine(StartHeal());
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -53,27 +82,74 @@ public class PlayerHealth : MonoBehaviour
         if (other.gameObject.CompareTag("water"))
         {
             _isInWater = false;
-            StopCoroutine(damageCoroutine);
+            if (damageCoroutine != null)
+            {
+                StopCoroutine(damageCoroutine);
+                damageCoroutine = null;
+            }
+        }
+
+        if (other.gameObject.CompareTag("save"))
+        {
+            _isInSave = false;
+            if (healCoroutine != null)
+            {
+                StopCoroutine(healCoroutine);
+                healCoroutine = null;
+            }
         }
     }
 
+    private IEnumerator StartDamage()
+    {
+        while (_isInWater)
+        {
+            if (currentHealth > 0 && !isHitByEnemy)
+            {
+                int targetHealth = Mathf.Max(0, currentHealth - minusHealth);
+                DOTween.To(() => currentHealth, x => currentHealth = x, targetHealth, 0.5f)
+                    .OnComplete(() =>
+                    {
+                        if (currentHealth <= 0)
+                        {
+                            EventManager.instance.WhenPlayerDied();
+                        }
+                    });
+            }
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+    private IEnumerator StartHeal()
+    {
+        while (_isInSave)
+        {
+            if (currentHealth < maxHealth)
+            {
+                int targetHealth = Mathf.Min(currentHealth + plusHealth, maxHealth);
+                DOTween.To(() => currentHealth, x => currentHealth = x, targetHealth, 0.5f);
+            }
+            yield return new WaitForSeconds(1f);
+        }
+    }
     private void OnPlayerHit(int damage)
     {
         if (isInvisible) return;
 
-        int target = Mathf.Max(currentHealth - damage, 0);
-        DOTween.To(() => currentHealth, x => currentHealth = x, target, 0.5f)
-        // .OnUpdate(() => ))
-        .OnComplete(() =>
-        {
-            if (currentHealth <= 0)
+        isHitByEnemy = true;
+        int target = Mathf.Max(0, currentHealth - damage);
+        DOTween.To(() => currentHealth, x => currentHealth = x, target, 0.4f)
+            .OnComplete(() =>
             {
-                EventManager.instance.WhenPlayerDied();
-                return;
-            }
-        });
+                isHitByEnemy = false;
+                if (currentHealth <= 0)
+                {
+                    EventManager.instance.WhenPlayerDied();
+                }
+            });
         StartCoroutine(SetInvisible());
     }
+
     private IEnumerator SetInvisible()
     {
         isInvisible = true;
@@ -93,12 +169,10 @@ public class PlayerHealth : MonoBehaviour
         collider.enabled = true;
         isInvisible = false;
 
-        // ✅ Reset collision di semua EnemyAttack
         EnemyAttack[] enemies = FindObjectsOfType<EnemyAttack>();
         foreach (var enemy in enemies)
         {
             enemy.ResetCollision();
         }
     }
-
 }
