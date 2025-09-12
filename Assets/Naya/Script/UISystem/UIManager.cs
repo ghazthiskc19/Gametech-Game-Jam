@@ -75,15 +75,15 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
     private Dictionary<UIType, UIBase> uiInstances = new();
     private Dictionary<UIType, UIEntry> uiConfigs = new();
 
-    [Space]
-    [SerializeField] private UIConfirmation confirmationPrefab;
-    [SerializeField, ReadOnly] private UIConfirmation confirmation;
+    // [Space]
+    // [SerializeField] private UIConfirmation confirmationPrefab;
+    // [SerializeField, ReadOnly] private UIConfirmation confirmation;
 
-    [SerializeField] private UIShiftInformation shiftInformationPrefab;
-    [SerializeField, ReadOnly] private UIShiftInformation shiftInformation;
+    // [SerializeField] private UIShiftInformation shiftInformationPrefab;
+    // [SerializeField, ReadOnly] private UIShiftInformation shiftInformation;
 
-    [SerializeField] private UITutorial UITutorialPrefab;
-    [SerializeField, ReadOnly] private UITutorial UITutorial;
+    // [SerializeField] private UITutorial UITutorialPrefab;
+    // [SerializeField, ReadOnly] private UITutorial UITutorial;
 
     // public UIBase debuggingJancok;
 
@@ -131,9 +131,9 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
             uiConfigs[entry.type] = entry;
         }
 
-        confirmation = Instantiate(confirmationPrefab, parent); confirmation.Hide();
-        UITutorial = Instantiate(UITutorialPrefab, parent); UITutorial.Hide();
-        shiftInformation = Instantiate(shiftInformationPrefab, parent); shiftInformation.Hide();
+        // confirmation = Instantiate(confirmationPrefab, parent); confirmation.Hide();
+        // UITutorial = Instantiate(UITutorialPrefab, parent); UITutorial.Hide();
+        // shiftInformation = Instantiate(shiftInformationPrefab, parent); shiftInformation.Hide();
     }
     public void ChangeUI(UIType toUI)
     {
@@ -157,9 +157,9 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
         }
 
         var config = uiConfigs[toUI];
-        GameManager.Instance.PauseGame(config.pauseGame);
-        GameManager.Instance.SetInput(!config.enableInput);
-        GameManager.Instance.SetEscape(config.allowEscape);
+        // GameManager.Instance.PauseGame(config.pauseGame);
+        // GameManager.Instance.SetInput(!config.enableInput);
+        // GameManager.Instance.SetEscape(config.allowEscape);
         Cursor.lockState = CursorLockMode.None;
 
 
@@ -183,77 +183,77 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
         }
     }
 
-    #region UI Confirmation
-    public void ShowConfirmation(ConfirmationClient informationClient)
-    {
-        if (confirmation == null) return;
+    // #region UI Confirmation
+    // public void ShowConfirmation(ConfirmationClient informationClient)
+    // {
+    //     if (confirmation == null) return;
 
-        Debug.Log("ui information show (Not null)");
-        // GameManager.Instance.SetInput(false);
-        // GameManager.Instance.SetEscape(false);
+    //     Debug.Log("ui information show (Not null)");
+    //     // GameManager.Instance.SetInput(false);
+    //     // GameManager.Instance.SetEscape(false);
 
-        if (informationClient.IsGamePause)
-        {
-            GameManager.Instance.PauseGame(true);
-            informationClient.OnYesConfirmation.AddListener(() => GameManager.Instance.PauseGame(false));
-        }
+    //     if (informationClient.IsGamePause)
+    //     {
+    //         GameManager.Instance.PauseGame(true);
+    //         informationClient.OnYesConfirmation.AddListener(() => GameManager.Instance.PauseGame(false));
+    //     }
 
 
-        confirmation.InitConfirmation(informationClient);
-        confirmation.Show();
-    }
-    public void HideConfirmation()//bukan hide, tapi lebih ke ngembalikan setting ke semua
-    {
-        ChangeUI(currentUI);
-        confirmation.Hide();
-    }
-    #endregion
-    #region UI Tutorial
-    public void ShowTutorial(TutorialClient informationClient)
-    {
-        if (UITutorial == null) return;
+    //     confirmation.InitConfirmation(informationClient);
+    //     confirmation.Show();
+    // }
+    // public void HideConfirmation()//bukan hide, tapi lebih ke ngembalikan setting ke semua
+    // {
+    //     ChangeUI(currentUI);
+    //     confirmation.Hide();
+    // }
+    // #endregion
+    // #region UI Tutorial
+    // public void ShowTutorial(TutorialClient informationClient)
+    // {
+    //     if (UITutorial == null) return;
 
-        Debug.Log("ui information show (Not null)");
-        // GameManager.Instance.SetEscape(false);
+    //     Debug.Log("ui information show (Not null)");
+    //     // GameManager.Instance.SetEscape(false);
 
-        if (informationClient.IsGamePause)
-        {
-            GameManager.Instance.PauseGame(true);
-            GameManager.Instance.SetInput(false);
-            GameManager.Instance.SetEscape(false);
-        }
+    //     if (informationClient.IsGamePause)
+    //     {
+    //         GameManager.Instance.PauseGame(true);
+    //         GameManager.Instance.SetInput(false);
+    //         GameManager.Instance.SetEscape(false);
+    //     }
 
-        UITutorial.InitConfirmation(informationClient);
-        UITutorial.Show();
-    }
-    public void HideTutorial()//bukan hide, tapi lebih ke ngembalikan setting ke semua
-    {
-        ChangeUI(currentUI);
-        UITutorial.Hide();
-    }
-    #endregion
-    #region UI Shift Information
-    public void ShowShiftInformation(ShiftSO shiftSO, Transform informationClient)
-    {
-        if (shiftInformation == null) return;
+    //     UITutorial.InitConfirmation(informationClient);
+    //     UITutorial.Show();
+    // }
+    // public void HideTutorial()//bukan hide, tapi lebih ke ngembalikan setting ke semua
+    // {
+    //     ChangeUI(currentUI);
+    //     UITutorial.Hide();
+    // }
+    // #endregion
+    // #region UI Shift Information
+    // public void ShowShiftInformation(ShiftSO shiftSO, Transform informationClient)
+    // {
+    //     if (shiftInformation == null) return;
 
-        Debug.Log("ui shift information show (Not null)");
+    //     Debug.Log("ui shift information show (Not null)");
 
-        shiftInformation.InitConfirmation(shiftSO, informationClient);
-        shiftInformation.Show();
-    }
-    public void HideShiftInformation()//bukan hide, tapi lebih ke ngembalikan setting ke semua
-    {
-        shiftInformation.Hide();
-    }
-    #endregion
-    #region UI Level Selection
-    public void ShowLevelSelection(ShiftSO shiftSO)
-    {
-        uiInstances[UIType.LEVELSELECTION].GetComponent<UILevelSelection>().InitLevel(shiftSO);
-        ChangeUI(UIType.LEVELSELECTION);
-    }
-    #endregion
+    //     shiftInformation.InitConfirmation(shiftSO, informationClient);
+    //     shiftInformation.Show();
+    // }
+    // public void HideShiftInformation()//bukan hide, tapi lebih ke ngembalikan setting ke semua
+    // {
+    //     shiftInformation.Hide();
+    // }
+    // #endregion
+    // #region UI Level Selection
+    // public void ShowLevelSelection(ShiftSO shiftSO)
+    // {
+    //     uiInstances[UIType.LEVELSELECTION].GetComponent<UILevelSelection>().InitLevel(shiftSO);
+    //     ChangeUI(UIType.LEVELSELECTION);
+    // }
+    // #endregion
 }
 
 

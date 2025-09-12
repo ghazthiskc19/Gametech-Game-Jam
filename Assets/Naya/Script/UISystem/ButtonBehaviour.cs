@@ -37,7 +37,7 @@ public class ButtonBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerExit
         DOTween.Kill(rectTransform);
 
         if (hoverSFX.IsValid()) BroAudio.Play(hoverSFX);
-        else AudioManager.Instance.PlaySound(Sound.ButtonHover);
+        //else AudioManager.Instance.PlaySound(Sound.ButtonHover);
 
         switch (hoverType)
         {
