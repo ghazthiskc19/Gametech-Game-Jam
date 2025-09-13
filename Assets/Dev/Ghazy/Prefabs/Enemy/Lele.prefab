@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2471097041274144747, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
       propertyPath: m_Name
-      value: Enemy 2
+      value: Lele
       objectReference: {fileID: 0}
     - target: {fileID: 4138280241758847597, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
       propertyPath: m_Color.b
@@ -79,6 +79,14 @@ PrefabInstance:
     - target: {fileID: 4138280241758847597, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
       propertyPath: m_Color.r
       value: 0.4522195
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825293753551352657, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7669685118313465548, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

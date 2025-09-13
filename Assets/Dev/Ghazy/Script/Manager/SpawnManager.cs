@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -10,7 +11,8 @@ public class SpawnManager : MonoBehaviour
     private float timer;
 
     [Header("Enemy List")]
-    public GameObject BasicEnemy;
+    public GameObject Enemy1;
+    public GameObject Enemy2;
     [Header("Objective List")]
     public GameObject[] ObjectivePrefab;
     public float objectiveSpawnInterval = 5f;
@@ -25,11 +27,11 @@ public class SpawnManager : MonoBehaviour
     }
     void Update()
     {
-
+        int episode = GameManager.instance.episode;
         timer += Time.deltaTime;
         if (timer >= spawnDuration)
         {
-            SpawnEnemy();
+            SpawnEnemy(episode);
             timer = 0;
         }
 
@@ -41,7 +43,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    private void SpawnEnemy()
+    private void SpawnEnemy(float wave)
     {
         int random = Random.Range(1, 11);
         bool spawnLeft = random % 2 == 0;
@@ -54,7 +56,15 @@ public class SpawnManager : MonoBehaviour
         Vector2 spawnPos = spawnLeft
             ? new Vector2(spawner[0].transform.position.x, randomY)
             : new Vector2(spawner[1].transform.position.x, randomY);
-        GameObject enemy = Instantiate(BasicEnemy, spawnPos, Quaternion.identity);
+        GameObject enemy = null;
+        if (wave == 1)
+        {
+            enemy = Instantiate(Enemy1, spawnPos, Quaternion.identity);
+        }
+        else if (wave == 2)
+        {
+            enemy = Instantiate(Enemy2, spawnPos, Quaternion.identity);
+        }
         enemy.GetComponent<EnemyMovement>().spawnLeft = spawnLeft;
     }
 

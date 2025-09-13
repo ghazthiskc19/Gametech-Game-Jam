@@ -9,6 +9,8 @@ TagManager:
   - shore
   - save
   - spawnArena
+  - darat
+  - JumpZone
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - UI
   - Minimap
   - 
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -48,6 +50,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 523603937
+    locked: 0
+  - name: Minimap
+    uniqueID: 1927225035
     locked: 0
   - name: Interacable
     uniqueID: 1021591717

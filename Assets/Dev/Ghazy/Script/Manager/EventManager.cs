@@ -11,6 +11,7 @@ public class EventManager : MonoBehaviour
     public event Action OnObjectiveCompleted;
     public event Action<int> OnPlayerHit;
     public event Action OnPlayerDied;
+    public event Action<int> OnEpisodeCompleted;
     void Awake()
     {
         if (instance == null)
@@ -41,5 +42,9 @@ public class EventManager : MonoBehaviour
         OnObjectDropped?.Invoke(score);
         OnObjectiveCompleted?.Invoke();
         OnObjectChangeState?.Invoke(go);
+    }
+    public void WhenEpisodeCompleted(int episode)
+    {
+        OnEpisodeCompleted?.Invoke(episode);
     }
 }

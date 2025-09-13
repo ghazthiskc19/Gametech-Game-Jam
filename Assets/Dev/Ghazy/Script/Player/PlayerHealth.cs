@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public bool isInvisible;
     public bool isHitByEnemy;
     public bool effectsPaused = false;
+    public bool IsInSaveZone { get { return _isInSave; } }
     private PlayerMovement playerMovement;
     [SerializeField] private bool _isInWater = false;
     [SerializeField] private bool _isInSave = false;
@@ -30,11 +31,43 @@ public class PlayerHealth : MonoBehaviour
         EventManager.instance.OnPlayerHit -= OnPlayerHit;
     }
 
+    private Coroutine dolphinHealCoroutine;
     void Update()
     {
         if (healthbarImage != null)
         {
             healthbarImage.fillAmount = (float) currentHealth / maxHealth;
+        }
+
+        if (playerMovement != null)
+        {
+            if (playerMovement._isDolphinJumping)
+            {
+                if (dolphinHealCoroutine == null)
+                {
+                    dolphinHealCoroutine = StartCoroutine(HealDuringDolphinJump());
+                }
+            }
+            else
+            {
+                if (dolphinHealCoroutine != null)
+                {
+                    StopCoroutine(dolphinHealCoroutine);
+                    dolphinHealCoroutine = null;
+                }
+            }
+        }
+    }
+    private IEnumerator HealDuringDolphinJump()
+    {
+        while (playerMovement._isDolphinJumping)
+        {
+            if (currentHealth < maxHealth)
+            {
+                int targetHealth = Mathf.Min(currentHealth + plusHealth, maxHealth);
+                DOTween.To(() => currentHealth, x => currentHealth = x, targetHealth, 0.5f);
+            }
+            yield return new WaitForSeconds(intervalHealth);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -92,10 +125,12 @@ public class PlayerHealth : MonoBehaviour
         if (other.gameObject.CompareTag("save"))
         {
             _isInSave = false;
+            _isInWater = true;
             if (healCoroutine != null)
             {
                 StopCoroutine(healCoroutine);
                 healCoroutine = null;
+                damageCoroutine = StartCoroutine(StartDamage());
             }
         }
     }
@@ -106,15 +141,18 @@ public class PlayerHealth : MonoBehaviour
         {
             if (currentHealth > 0 && !isHitByEnemy)
             {
-                int targetHealth = Mathf.Max(0, currentHealth - minusHealth);
-                DOTween.To(() => currentHealth, x => currentHealth = x, targetHealth, 0.5f)
-                    .OnComplete(() =>
-                    {
-                        if (currentHealth <= 0)
+                if (!playerMovement._isDolphinJumping)
+                {
+                    int targetHealth = Mathf.Max(0, currentHealth - minusHealth);
+                    DOTween.To(() => currentHealth, x => currentHealth = x, targetHealth, 0.5f)
+                        .OnComplete(() =>
                         {
-                            EventManager.instance.WhenPlayerDied();
-                        }
-                    });
+                            if (currentHealth <= 0)
+                            {
+                                EventManager.instance.WhenPlayerDied();
+                            }
+                        });
+                }
             }
             yield return new WaitForSeconds(1f);
         }
