@@ -14,15 +14,15 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Gametech Game Jam
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: f9fa958fd878f604fbb355f33e8d8be1, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
+  m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -39,7 +39,19 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
+    duration: 2
+  - logo: {fileID: -855298285791758126, guid: cdde1f19297b9fe45bdbd276e053925a, type: 3}
+    duration: 2
+  - logo: {fileID: 6937817954938267909, guid: ed539916ffd3d8b4fb677e541c595bb1, type: 3}
+    duration: 2
+  - logo: {fileID: -6470460504253458178, guid: f284b49d41f30084597f0ea67c23a78d, type: 3}
+    duration: 2
+  - logo: {fileID: -4178046375966092550, guid: f43ba0642fd66d64a952b55f122534d0, type: 3}
+    duration: 2
+  - logo: {fileID: 4130640169021434097, guid: b6c9398033bac574fbb5234172f5f883, type: 3}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
