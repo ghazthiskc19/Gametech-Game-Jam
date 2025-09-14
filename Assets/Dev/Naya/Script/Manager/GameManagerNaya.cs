@@ -23,7 +23,7 @@ public class GameManagerNaya : MonoBehaviour
         EventManager.instance.OnPlayerDied += ChangeDiedScene;
     }
     private void OnDisable() {
-        EventManager.instance.OnPlayerDied -= ChangeDiedScene;  
+        EventManager.instance.OnPlayerDied -= ChangeDiedScene;
     }
 
     public void ChangeDiedScene()
@@ -46,6 +46,7 @@ public class GameManagerNaya : MonoBehaviour
     }
     public void PauseGame(bool pause)
     {
+        AudioManager.instance.PlayBGM("Swim");
         Time.timeScale = pause ? 0 : 1;
     }
     void Update()
@@ -78,5 +79,8 @@ public class GameManagerNaya : MonoBehaviour
         else if (UIManager.Instance.CurrentUI == UIManager.UIType.PAUSEMENU) UIManager.Instance.ChangeUI(UIManager.UIType.GAMEPLAY);
         else UIManager.Instance.ChangeUI(UIManager.Instance.PreviousUI);
     }
-
+    public void OnExit()
+    {
+        Application.Quit();
+    }
 }
