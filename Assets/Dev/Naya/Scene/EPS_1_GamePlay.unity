@@ -9592,6 +9592,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1743689907853073171, guid: ed1a0656e6a44e845847dc1dc05967f5, type: 3}
+    - target: {fileID: 5512567152082526260, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 129
+      objectReference: {fileID: 0}
     - target: {fileID: 6039631674107092816, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -9672,12 +9676,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6145487267231310038, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -105
+      objectReference: {fileID: 0}
     - target: {fileID: 6240321899469682557, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
       propertyPath: m_Name
       value: PopUp Settings
       objectReference: {fileID: 0}
     - target: {fileID: 6240321899469682557, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073070457421286640, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8490837508062676048, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}

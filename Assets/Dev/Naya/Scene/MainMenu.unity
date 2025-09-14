@@ -11415,6 +11415,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1256085121}
     m_Modifications:
+    - target: {fileID: 2846199483997725826, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118361550769120422, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057047813186155085, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: -2836730564200502094, guid: 6fa0fd5cc37bdf94d9cbaae5f2aa30f3, type: 3}
+    - target: {fileID: 4079510793968103493, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184000849448035812, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1743689907853073171, guid: ed1a0656e6a44e845847dc1dc05967f5, type: 3}
+    - target: {fileID: 5512567152082526260, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 140
+      objectReference: {fileID: 0}
     - target: {fileID: 6039631674107092816, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11495,9 +11519,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6145487267231310038, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -69
+      objectReference: {fileID: 0}
     - target: {fileID: 6240321899469682557, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
       propertyPath: m_Name
       value: PopUp Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 6240321899469682557, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073070457421286640, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490837508062676048, guid: dc5e7b0c551cb7247af98d18a3d21d9e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
