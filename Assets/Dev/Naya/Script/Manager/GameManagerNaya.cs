@@ -1,7 +1,14 @@
+using System;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManagerNaya : MonoBehaviour
 {
+
+    public void Play(String SceneName)
+    {
+        LevelManager.Instance.LoadScene(SceneName, "CrossFade");
+        Debug.Log("iya kepanggil");
+    }
 
     public void PauseGame(bool pause)
     {
