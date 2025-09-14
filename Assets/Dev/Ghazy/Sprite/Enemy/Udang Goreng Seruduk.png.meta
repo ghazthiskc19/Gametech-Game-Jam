@@ -1,0 +1,380 @@
+fileFormatVersion: 2
+guid: b61d22089d49e8641a980d5c0a741f90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4563100737718270250
+    second: Udang Goreng Seruduk_0
+  - first:
+      213: 7906567902856355685
+    second: Udang Goreng Seruduk_1
+  - first:
+      213: 1924871327283626072
+    second: Udang Goreng Seruduk_2
+  - first:
+      213: 2877138413858434280
+    second: Udang Goreng Seruduk_3
+  - first:
+      213: 2698982732954100495
+    second: Udang Goreng Seruduk_4
+  - first:
+      213: -997894288498505681
+    second: Udang Goreng Seruduk_5
+  - first:
+      213: -2111242029244757278
+    second: Udang Goreng Seruduk_6
+  - first:
+      213: 3712660011995888500
+    second: Udang Goreng Seruduk_7
+  - first:
+      213: -31644023118202826
+    second: Udang Goreng Seruduk_8
+  - first:
+      213: -9022904933409701450
+    second: Udang Goreng Seruduk_9
+  - first:
+      213: 8030662317479260840
+    second: Udang Goreng Seruduk_10
+  - first:
+      213: -2420093271942408812
+    second: Udang Goreng Seruduk_11
+  - first:
+      213: -8603898734676097305
+    second: Udang Goreng Seruduk_12
+  - first:
+      213: 8119652548452285438
+    second: Udang Goreng Seruduk_13
+  - first:
+      213: -1392845486042582382
+    second: Udang Goreng Seruduk_14
+  - first:
+      213: -6116763140159620245
+    second: Udang Goreng Seruduk_15
+  - first:
+      213: -2199820332598148544
+    second: Udang Goreng Seruduk_16
+  - first:
+      213: 7487736709698000132
+    second: Udang Goreng Seruduk_17
+  - first:
+      213: 5297084734382396021
+    second: Udang Goreng Seruduk_18
+  - first:
+      213: 8822997757817094564
+    second: Udang Goreng Seruduk_19
+  - first:
+      213: 5430458656881249244
+    second: Udang Goreng Seruduk_20
+  - first:
+      213: -1302523992454668137
+    second: Udang Goreng Seruduk_21
+  - first:
+      213: -1917054864088827336
+    second: Udang Goreng Seruduk_22
+  - first:
+      213: -8463090243388946344
+    second: Udang Goreng Seruduk_23
+  - first:
+      213: -5803118027468107927
+    second: Udang Goreng Seruduk_24
+  - first:
+      213: 5603275650636027686
+    second: Udang Goreng Seruduk_25
+  - first:
+      213: 3342888226273594923
+    second: Udang Goreng Seruduk_26
+  - first:
+      213: -930880858738055432
+    second: Udang Goreng Seruduk_27
+  - first:
+      213: -6345823043657513474
+    second: Udang Goreng Seruduk_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Udang Goreng Seruduk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6cafd2e0c9ca0c0800000000000000
+      internalID: -4563100737718270250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Seruduk_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f124aed95c9bd60800000000000000
+      internalID: 7906567902856355685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Seruduk_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8504315164486ba10800000000000000
+      internalID: 1924871327283626072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Seruduk_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eca9a7c426ade720800000000000000
+      internalID: 2877138413858434280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Seruduk_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0364acee76b47520800000000000000
+      internalID: 2698982732954100495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Seruduk_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28c7a28e64c622f0800000000000000
+      internalID: -997894288498505681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Seruduk_6
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eacdfb6f8c53b2e0800000000000000
+      internalID: -2111242029244757278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7c7fc1a0c5e6cd142964c80661e7cba6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Udang Goreng Seruduk_0: -4563100737718270250
+      Udang Goreng Seruduk_1: 7906567902856355685
+      Udang Goreng Seruduk_2: 1924871327283626072
+      Udang Goreng Seruduk_3: 2877138413858434280
+      Udang Goreng Seruduk_4: 2698982732954100495
+      Udang Goreng Seruduk_5: -997894288498505681
+      Udang Goreng Seruduk_6: -2111242029244757278
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

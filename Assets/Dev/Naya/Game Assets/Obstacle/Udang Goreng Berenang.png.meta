@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: caa0d6d34f580c54ab6d944ad6af7556
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3713518152734510011
+    second: Udang Goreng Berenang_0
+  - first:
+      213: 5403889784809537553
+    second: Udang Goreng Berenang_1
+  - first:
+      213: 5025412931729927123
+    second: Udang Goreng Berenang_2
+  - first:
+      213: 221362976158234264
+    second: Udang Goreng Berenang_3
+  - first:
+      213: 8068824179917016145
+    second: Udang Goreng Berenang_4
+  - first:
+      213: -4173344881607299290
+    second: Udang Goreng Berenang_5
+  - first:
+      213: 4760428329741481137
+    second: Udang Goreng Berenang_6
+  - first:
+      213: -3651597501388976984
+    second: Udang Goreng Berenang_7
+  - first:
+      213: 395921422100288493
+    second: Udang Goreng Berenang_8
+  - first:
+      213: -9165588021087547722
+    second: Udang Goreng Berenang_9
+  - first:
+      213: -4000950012547754197
+    second: Udang Goreng Berenang_10
+  - first:
+      213: 3864882698149683209
+    second: Udang Goreng Berenang_11
+  - first:
+      213: -8993912237160725118
+    second: Udang Goreng Berenang_12
+  - first:
+      213: 3356836729245207807
+    second: Udang Goreng Berenang_13
+  - first:
+      213: -3063462772001527930
+    second: Udang Goreng Berenang_14
+  - first:
+      213: 4644227096124702663
+    second: Udang Goreng Berenang_15
+  - first:
+      213: -4139628962443998592
+    second: Udang Goreng Berenang_16
+  - first:
+      213: -6528254105584010842
+    second: Udang Goreng Berenang_17
+  - first:
+      213: -8641855207722791930
+    second: Udang Goreng Berenang_18
+  - first:
+      213: 1672819813312617373
+    second: Udang Goreng Berenang_19
+  - first:
+      213: 6268481646876008246
+    second: Udang Goreng Berenang_20
+  - first:
+      213: 1603220521611818392
+    second: Udang Goreng Berenang_21
+  - first:
+      213: -8186849049474718146
+    second: Udang Goreng Berenang_22
+  - first:
+      213: 1967062986633042657
+    second: Udang Goreng Berenang_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_0
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 342
+        width: 664
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5447b474aeee67cc0800000000000000
+      internalID: -3713518152734510011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_1
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 294
+        width: 637
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1104fe4d0297efa40800000000000000
+      internalID: 5403889784809537553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_2
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 405
+        width: 136
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbaa658f6addb540800000000000000
+      internalID: 5025412931729927123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_3
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 247
+        width: 582
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896b5583470721300800000000000000
+      internalID: 221362976158234264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_4
+      rect:
+        serializedVersion: 2
+        x: 4226
+        y: 222
+        width: 510
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c490757d83aff60800000000000000
+      internalID: 8068824179917016145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_5
+      rect:
+        serializedVersion: 2
+        x: 5237
+        y: 289
+        width: 584
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f2a9601fc4516c0800000000000000
+      internalID: -4173344881607299290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_6
+      rect:
+        serializedVersion: 2
+        x: 5447
+        y: 610
+        width: 156
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b472f41850701240800000000000000
+      internalID: 4760428329741481137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_7
+      rect:
+        serializedVersion: 2
+        x: 5552
+        y: 621
+        width: 82
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac81036b6be25dc0800000000000000
+      internalID: -3651597501388976984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_8
+      rect:
+        serializedVersion: 2
+        x: 6210
+        y: 334
+        width: 695
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3514b8f689e7500800000000000000
+      internalID: 395921422100288493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 354
+        width: 770
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be4085914a4dc080800000000000000
+      internalID: -9165588021087547722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_10
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 354
+        width: 59
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b271ff95925c978c0800000000000000
+      internalID: -4000950012547754197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_11
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 417
+        width: 37
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900e3c14652d2a530800000000000000
+      internalID: 3864882698149683209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_12
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 462
+        width: 26
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2850ffad8743f2380800000000000000
+      internalID: -8993912237160725118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_13
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 382
+        width: 49
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc05af4831e59e20800000000000000
+      internalID: 3356836729245207807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_14
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 403
+        width: 18
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687273cf6d46c75d0800000000000000
+      internalID: -3063462772001527930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_15
+      rect:
+        serializedVersion: 2
+        x: 4213
+        y: 374
+        width: 21
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfb1c010fb937040800000000000000
+      internalID: 4644227096124702663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_16
+      rect:
+        serializedVersion: 2
+        x: 5219
+        y: 424
+        width: 107
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a4b9f24651d86c0800000000000000
+      internalID: -4139628962443998592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_17
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 322
+        width: 102
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9fd29aa7bf665a0800000000000000
+      internalID: -6528254105584010842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_18
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 362
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cc25f9976f11880800000000000000
+      internalID: -8641855207722791930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_19
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 293
+        width: 47
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bdbb9d1cc073710800000000000000
+      internalID: 1672819813312617373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_20
+      rect:
+        serializedVersion: 2
+        x: 6739
+        y: 301
+        width: 119
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f991398de1ef650800000000000000
+      internalID: 6268481646876008246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_21
+      rect:
+        serializedVersion: 2
+        x: 5630
+        y: 251
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895f947f198cf3610800000000000000
+      internalID: 1603220521611818392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_22
+      rect:
+        serializedVersion: 2
+        x: 6704
+        y: 304
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36a0505a28726e80800000000000000
+      internalID: -8186849049474718146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Udang Goreng Berenang_23
+      rect:
+        serializedVersion: 2
+        x: 5692
+        y: 261
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ead4194d596c4b10800000000000000
+      internalID: 1967062986633042657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Udang Goreng Berenang_0: -3713518152734510011
+      Udang Goreng Berenang_1: 5403889784809537553
+      Udang Goreng Berenang_10: -4000950012547754197
+      Udang Goreng Berenang_11: 3864882698149683209
+      Udang Goreng Berenang_12: -8993912237160725118
+      Udang Goreng Berenang_13: 3356836729245207807
+      Udang Goreng Berenang_14: -3063462772001527930
+      Udang Goreng Berenang_15: 4644227096124702663
+      Udang Goreng Berenang_16: -4139628962443998592
+      Udang Goreng Berenang_17: -6528254105584010842
+      Udang Goreng Berenang_18: -8641855207722791930
+      Udang Goreng Berenang_19: 1672819813312617373
+      Udang Goreng Berenang_2: 5025412931729927123
+      Udang Goreng Berenang_20: 6268481646876008246
+      Udang Goreng Berenang_21: 1603220521611818392
+      Udang Goreng Berenang_22: -8186849049474718146
+      Udang Goreng Berenang_23: 1967062986633042657
+      Udang Goreng Berenang_3: 221362976158234264
+      Udang Goreng Berenang_4: 8068824179917016145
+      Udang Goreng Berenang_5: -4173344881607299290
+      Udang Goreng Berenang_6: 4760428329741481137
+      Udang Goreng Berenang_7: -3651597501388976984
+      Udang Goreng Berenang_8: 395921422100288493
+      Udang Goreng Berenang_9: -9165588021087547722
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
