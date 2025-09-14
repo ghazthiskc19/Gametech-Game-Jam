@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
-using System;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -25,12 +24,18 @@ public class PlayerMovement : MonoBehaviour
     private PlayerHealth _playerHealth;
     private Animator _animator;
     private PlayerInteract _playerInteract;
+    private bool _isDead = false;
     void Start()
     {
         _animator = GetComponent<Animator>();
         _playerHealth = GetComponent<PlayerHealth>();
         _rb = GetComponent<Rigidbody2D>();
         _playerInteract = GetComponentInChildren<PlayerInteract>();
+        EventManager.instance.OnPlayerDied += HandlePlayerDied;
+    }
+    private void OnDisable()
+    {
+        EventManager.instance.OnPlayerDied -= HandlePlayerDied;
     }
 
     void Update()
@@ -39,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (_isDead) return;
         if (_isDashing)
         {
             _rb.linearVelocity = dashSpeed * _moveInput;
@@ -54,7 +60,8 @@ public class PlayerMovement : MonoBehaviour
         {
             _rb.linearVelocity = movementSpeed * _moveInput;
         }
-}
+    }
+
     void LateUpdate()
     {
         if (_isDolphinJumping || playableArea == null)
@@ -98,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
         _playerInteract.isHolding = false;
 
         yield return new WaitUntil(() => _playerHealth.IsInSaveZone);
-        
+
         _playerHealth.effectsPaused = false;
         _isDolphinJumping = false;
 
@@ -146,6 +153,15 @@ public class PlayerMovement : MonoBehaviour
     public void OnInteract(InputValue input)
     {
         isHoldInteract = input.isPressed;
+    }
+    private void HandlePlayerDied()
+    {
+        _isDead = true;
+        _rb.linearVelocity = Vector2.zero; // stop gerakan
+        _animator.SetBool("IsMoving", false);
+        _animator.SetBool("IsDashing", false);
+
+        Debug.Log("Player mati, movement dimatiin!");
     }
 }
 

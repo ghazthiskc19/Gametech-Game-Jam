@@ -19,11 +19,20 @@ public class SpawnManager : MonoBehaviour
     public int maxObjectiveCount = 15;
     private float objectiveTimer;
     private int currentObjectiveCount = 0;
+    private bool _isSpawningActive = true;
     void Awake() {
         if (instance == null)
         {
             instance = this;
         }    
+    }
+    private void Start()
+    {
+        EventManager.instance.OnPlayerDied += HandlePlayerDied;
+    }
+    private void OnDisable()
+    {
+        EventManager.instance.OnPlayerDied -= HandlePlayerDied;
     }
     void Update()
     {
@@ -42,9 +51,13 @@ public class SpawnManager : MonoBehaviour
             objectiveTimer = 0;
         }
     }
-
+    private void HandlePlayerDied()
+    {
+        _isSpawningActive = false;
+    }
     private void SpawnEnemy(float wave)
     {
+        if (!_isSpawningActive) return;
         int random = Random.Range(1, 11);
         bool spawnLeft = random % 2 == 0;
 
