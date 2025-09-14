@@ -100,9 +100,9 @@ public class PlayerMovement : MonoBehaviour
 
             Destroy(sampah.gameObject);
             Debug.Log("masuk sini");
+            _playerInteract.isHolding = false;
         }
 
-        _playerInteract.isHolding = false;
 
         yield return new WaitUntil(() => _playerHealth.IsInSaveZone);
 
