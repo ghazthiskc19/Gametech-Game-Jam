@@ -61,11 +61,13 @@ public class GameManagerNaya : MonoBehaviour
         if (Time.timeScale == 1)
         {
             mainMenu.SetActive(true);
+            AudioManager.instance.StopBGM();
             Time.timeScale = 0;
         }
         else
         {
             Time.timeScale = 1;
+            AudioManager.instance.PlayBGM("Swim");
             mainMenu.SetActive(false);
         }
     }
