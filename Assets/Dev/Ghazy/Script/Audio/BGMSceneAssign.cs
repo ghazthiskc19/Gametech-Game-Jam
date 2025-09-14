@@ -19,7 +19,7 @@ public class BGMSceneAssign : MonoBehaviour
             case "TutorialScene":
             case "EPS_1_GamePlay":
             case "EPS_2_GamePlay":
-                // AudioManager.instance.PlayBGM("In Game");
+                AudioManager.instance.PlayBGM("In Game");
                 break;
             default:
                 AudioManager.instance.StopBGM();

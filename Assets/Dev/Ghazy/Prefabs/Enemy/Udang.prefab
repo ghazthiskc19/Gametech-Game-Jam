@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Udang
       objectReference: {fileID: 0}
+    - target: {fileID: 3567793024820309999, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1013079
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567793024820309999, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.10506505
+      objectReference: {fileID: 0}
     - target: {fileID: 4138280241758847597, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
       propertyPath: m_Color.b
       value: 0.7607291

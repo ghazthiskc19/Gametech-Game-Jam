@@ -10,22 +10,17 @@ public class ParallaxScript : MonoBehaviour
 
     void Start()
     {
-        // Cari dan simpan transform dari kamera utama
         cameraTransform = Camera.main.transform;
 
-        // Catat posisi awal kamera saat game dimulai
         cameraStartPosition = cameraTransform.position;
         
-        // Catat posisi awal dari background (objek tempat script ini menempel)
         backgroundStartPosition = transform.position;
     }
 
     void LateUpdate()
     {
-        // Hitung seberapa jauh kamera telah bergerak DARI TITIK AWALNYA
         Vector3 distanceTraveled = cameraTransform.position - cameraStartPosition;
 
-        // Hitung pergerakan parallax untuk background ini
         float parallaxMoveX = distanceTraveled.x * parallaxEffectMultiplier.x;
         float parallaxMoveY = distanceTraveled.y * parallaxEffectMultiplier.y;
 

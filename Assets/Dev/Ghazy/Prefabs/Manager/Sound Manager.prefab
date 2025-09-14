@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 3225741288035135554}
   - component: {fileID: 1244064238406719389}
   - component: {fileID: 5954548417147884298}
+  - component: {fileID: 3050502426318669818}
   m_Layer: 0
   m_Name: Sound Manager
   m_TagString: Untagged
@@ -311,10 +312,12 @@ MonoBehaviour:
   sfxClips:
   - {fileID: 8300000, guid: f1a2aa126c01ba246a1fbec60ffe1d02, type: 3}
   - {fileID: 8300000, guid: bb4bbf658f40d2a4ca2c2360dc4d472a, type: 3}
+  - {fileID: 8300000, guid: f680073d073c7e74aabaab7ec3ea642f, type: 3}
   bgmClips:
   - {fileID: 8300000, guid: b0446bf22c6685d4f83d475045420c48, type: 3}
   - {fileID: 8300000, guid: af93fe7b488b1ee4bb8008968ddcd125, type: 3}
   - {fileID: 8300000, guid: d6432d107119907479ab7a38d5222e60, type: 3}
+  - {fileID: 8300000, guid: 78ddabdce60da8045b85051418003b49, type: 3}
   sfxLocked: 0
 --- !u!114 &1244064238406719389
 MonoBehaviour:
@@ -329,8 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VolumeSlider
   settings: {fileID: 0}
-  bgmSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
+  allSliders: []
 --- !u!114 &5954548417147884298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,3 +345,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 376e74e6ab13ffa489a0acee02c26129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BGMSceneAssign
+--- !u!114 &3050502426318669818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5153809986808258774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bce85a10567f546990374343b69a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioButtonAssign
+  sfxName: Click Button - edited
+  preventOverlap: 0

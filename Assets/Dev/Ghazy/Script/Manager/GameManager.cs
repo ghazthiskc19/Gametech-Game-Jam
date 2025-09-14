@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text textEpisode;
     void Start()
     {
-
+        amountText.text = "0 /" + totalAmount;
         if (instance == null)
         {
             instance = this;

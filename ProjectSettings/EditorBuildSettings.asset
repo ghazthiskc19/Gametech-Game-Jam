@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Dev/Naya/Scene/MainMenu.unity
+    guid: 828196608c0f42448b9cb3c8765571e4
   - enabled: 0
     path: Assets/Dev/Ghazy/Scene/GamePlay.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Dev/Naya/Scene/Dead.unity
-    guid: 4a7bd86038f46fd4f870dba7d3d6cee7
   - enabled: 1
     path: Assets/Dev/Naya/Scene/EPS_1_EndCutScene.unity
     guid: 992af48504acbf64dabba85643801e00
@@ -30,11 +30,11 @@ EditorBuildSettings:
     path: Assets/Dev/Naya/Scene/EPS_2_StartCutScene.unity
     guid: 48e25a2548567e740aad3b872e203a95
   - enabled: 1
-    path: Assets/Dev/Naya/Scene/MainMenu.unity
-    guid: 828196608c0f42448b9cb3c8765571e4
-  - enabled: 1
     path: Assets/Dev/Naya/Scene/Tutorial.unity
     guid: e38dc41f6e3e4ac4986ad8f5ea75909c
+  - enabled: 1
+    path: Assets/Dev/Naya/Scene/Dead.unity
+    guid: 4a7bd86038f46fd4f870dba7d3d6cee7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class GameManagerNaya : MonoBehaviour
 {
     public static GameManagerNaya instance;
@@ -71,6 +72,14 @@ public class GameManagerNaya : MonoBehaviour
             AudioManager.instance.PlayBGM("Swim");
             mainMenu.SetActive(false);
         }
+    }
+    public void RestartCurrentScene1()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void RestartCurrentScene2()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
     public void ESCHandler()
     {

@@ -68,6 +68,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lele
       objectReference: {fileID: 0}
+    - target: {fileID: 3567793024820309999, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Size.x
+      value: 2.451484
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567793024820309999, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7778343
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567793024820309999, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.10367739
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567793024820309999, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.42211562
+      objectReference: {fileID: 0}
     - target: {fileID: 4138280241758847597, guid: 5f0478250b39dbc4e92a464145a883a9, type: 3}
       propertyPath: m_Color.b
       value: 0.29510143
